@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+}
+h1{
+    text-align: center;
+    border-bottom: 5px solid brown;
+    background-color: black;
+    color: aliceblue;
+    font-family: sans-serif;
+    padding: 20px;
+}
+.gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px 20px;
+}
+.gallery img{
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    height: 350px;
+    object-fit: cover;
+}
