@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="exercise7.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <img src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg">
+            <h1>HTML/CSS Quiz</h1>
+            <nav>
+                <ul>
+                    <li><a href="#student-info">INFO</a></li>
+                    <li><a href="#html-info">HTML</a></li>
+                    <li><a href="#css-info">CSS</a></li>
+                </ul>
+            </nav>
+        </header>
+        <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
+            <section role="region" aria-labelledby="student-info">
+                <h2 id="student-info" class="student-info">Student Info</h2>
+               <div class="block">
+                <div class="infor">
+                    <label for="student-name">Name:</label>
+                    <input name="student-name" id="student-name" type="text">
+                </div>
+                <div class="infor">
+                    <label for="email">Email:</label>
+                    <input name="email" id="email" type="email">
+                </div>
+                <div class="infor">
+                    <label for="date">D.O.B:</label>
+                    <input name="date" id="date" type="date">
+                </div>
+               </div>
+            </section>
+
+            <section role="region" aria-labelledby="html-info">
+                <h2 id="html-info" class="html-info">HTML</h2>
+                <fieldset>
+                    <legend>1</legend>
+                    <p>The legend element represents a caption for the content of its parent fieldset element</p>
+                    <ul>
+                        <li>
+                            <input type="radio" name="q1" id="a1-q1" value="true">
+                            <label for="a1-q1">True</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q1" id="a2-q1" value="false">
+                            <label for="a2-q1">False</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>2</legend>
+                    <p>A label element nesting an input element is required to have a for attribute with the same value as the input's id</p>
+                    <ul>
+                        <li>
+                            <input type="radio" name="q2" id="a1-q2" value="true">
+                            <label for="a1-q2">True</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q2" id="a2-q2" value="false">
+                            <label for="a2-q2">False</label>
+                        </li>
+                    </ul>
+                </fieldset>
+            </section>
+
+            <section role="region" aria-labelledby="css-info">
+                <h2 id="css-info" class="css-info">CSS</h2>
+                <div class="css-block">
+                    <label for="choose">Are you a frontend developer?</label>
+                    <select id="choose">
+                        <option>Select an option</option>
+                        <option>Yes</option>
+                        <option>No</option>
+                    </select>
+                </div>
+                <div class="css-block">
+                    <label>Do you have any questions:</label>
+                    <textarea rows="5" cols="24" placeholder="Who is flexbox..."></textarea>
+                    </textarea>
+                </div>
+            </section>
+            <button type="submit">Send</button>
+        </form>
+
+        <footer>
+            <address>
+               <a>freeCodeCamp</a>
+               <br>San Francisco
+               <br>California
+               <br>USA
+            </address>
+        </footer>
+    </body>
+</html>
