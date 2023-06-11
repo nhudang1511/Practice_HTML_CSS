@@ -1,0 +1,80 @@
+section{
+    border: 2px solid gray;
+    width: 700px;
+    padding-bottom: 40px;
+    margin: auto;
+    max-width: 95%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1,h4{
+    padding-left: 20px;
+}
+#year{
+    background-color: black;
+    color: aliceblue;
+    padding: 10px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: sticky;
+    z-index: 999;
+    top: 0;
+}
+.year-item{
+    padding:0 10px 0 15px;
+}
+caption{
+    text-align: left;
+    padding: 20px 0 10px 5px;
+    color: rgb(0, 119, 255);
+    font-size: 18px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.table-wrap{
+    margin: 0 10px;
+}
+tr.sr-only{
+    position: absolute !important;
+    overflow: hidden !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    clip-path: inset(50%) !important;
+}
+tr.data span{
+    display: block;
+    font-weight: normal;
+    margin: 5px;
+    font-style: italic;
+}
+tr.data{
+    background-image: linear-gradient(rgb(231, 231, 231) 25px,white 25px);
+}
+tbody tr th{
+    text-align: left;
+    padding-left: 5px;
+    padding-top: 3px;
+}
+tbody td {
+    width: 100vw;
+    min-width: 4rem;
+    max-width: 4rem;
+}
+tr td{
+    text-align: right;
+    vertical-align: top;
+    padding-top: 3px;
+}
+td.current{
+    padding-right: 8px;
+    font-style: italic;
+}
+tr.total{
+    font-weight: bold;
+    border-bottom: double black 4px;
+}
+tr.total:hover{
+    background-color: rgb(0, 119, 255);
+}
