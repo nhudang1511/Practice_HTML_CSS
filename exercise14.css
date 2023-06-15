@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Baskervville', serif;
+}
+h1 {
+    font-family: 'Anton', sans-serif;
+}
+h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+main{
+    display: grid;
+    grid-template-columns: minmax(2rem,1fr) minmax(min-content,98rem) minmax(2rem, 1fr);
+    row-gap: 3rem;
+    background-color: rgb(5, 1, 37);
+    color: linen;
+}
+.heading{
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+header{
+    grid-column: 1 /-1;
+   
+}
+.text{
+    grid-column: 2/3;
+    column-width: 25rem;
+    font-size: 1.5rem;
+    text-align: justify;
+    letter-spacing: 0.6px;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+}
+a{
+    text-decoration: none;
+    color: linen;
+}
+.newspaper-title{
+    color: orangered;
+    text-align: center;
+    font-size: 8rem;
+}
+.newspaper-subtitle{
+    color: orangered;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.author{
+    font-size: 2rem;
+    font-family: "Raleway", sans-serif;
+}
+.author a:hover{
+    background-color: rgb(10, 79, 10);
+}
+.newspaper-icon{
+    font-size: 3rem;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    align-items: center;
+}
+.first-paragraph::first-letter{
+    color: orangered;
+    font-size: 8rem;
+    float: left;
+    margin-right: 10px;
+}
+hr{
+    margin: 1.5rem 0;
+    border: 1px solid rgba(120, 120, 120, 0.6);
+}
+.quote::after{
+    content: '" ';
+}
+.quote::before{
+    content: '" ';
+}
+.quote{
+    color: rgb(0, 225, 255);
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+}
+.part2{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 3rem;
+}
+.part2 h3{
+    color: rgb(0, 225, 255);
+    font-size: 2rem;
+}
+.lists{
+    margin-top: 2rem;
+    list-style-type: none;
+}
+.lists>li{
+    margin: 10px 0;
+}
+.lists h4{
+    color: rgb(0, 225, 255);
+}
+.img_wrap{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(3, min-content);
+    gap: 2rem;
+    place-items: center;
+}
+.img_1, .img_3{
+    grid-column: 1/ -1;
+}
+@media (max-width: 800px) {
+    .img_wrap{
+        grid-template-columns: 1fr;
+    }
+  }
+  
+  
