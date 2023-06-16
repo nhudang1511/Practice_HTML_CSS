@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px; 
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+img{
+    width: 300px;
+}
+#nav-bar{
+    position: fixed;
+    right: 10px;
+    right: 10px;
+}
+#nav-bar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#nav-bar li{
+    list-style-type: none;
+    margin: 0 30px;
+}
+#nav-bar a{
+    text-decoration: none;
+    color: black;
+}
+#form{
+    text-align: center;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#form #email{
+    margin: 10px 0;
+    padding: 5px;
+    width: 200px;
+}
+#form #email:hover{
+    border: 2px solid orange;
+}
+#form input[type="submit"]{
+    padding: 3px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #f1c40f;
+    border: none;
+}
+#form input[type="submit"]:hover{
+    background-color: orange;
+}
+.product-list .items{
+   grid-column: 2/3;
+   display: grid;
+   grid-template-columns: 10rem 5rem 3fr;
+   margin: 80px 0;
+}
+.product-list .items i{
+    color: orange;
+}
+.product-list .items .icon{
+    grid-column: 2/3;
+}
+.fire{
+    padding-left: 10px;
+}
+#video-frame{
+    text-align: center;
+}
+.price-list{
+    margin: 50px 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    column-gap: 10px;
+}
+.price-list li{
+    list-style-type: none;
+    margin: 10px 0;
+}
+.price{
+    border: 1px black solid;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+
+.price-name{
+    background-color: gainsboro;
+    padding: 15px 0;
+}
+.price-service{
+    font-size: 2rem;
+    margin: 20px 0;
+}
+.price-list input[type="submit"]{
+    background-color: #f1c40f;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+footer{
+    background-color: gainsboro;
+    text-align: right;
+    padding: 10px;
+}
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+footer ul li{
+    padding: 0 10px;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+@media (max-width:900px) {
+    #nav-bar ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #nav-bar li{
+        margin-bottom: 3px;
+    }
+    .product-list .items{
+        grid-template-columns: 3rem 5rem 3fr;
+    }
+    .price-list{
+        flex-direction: column;
+        align-items: center;
+    }
+    .price-list .price{
+        margin-bottom: 10px;
+    }
+}
