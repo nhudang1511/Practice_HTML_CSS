@@ -1,0 +1,179 @@
+:root{
+    --color-title:#BE3144;
+    --main-gray:#303841;
+}
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    position: sticky;
+    top: 0;
+    background-color: var(--color-title);
+    font-size: 20px;
+}
+#navbar{
+    top: 0;
+    text-align: end;
+    padding: 20px;
+}
+#navbar a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 21px;
+}
+#navbar a:hover{
+    background-color: rgb(37, 37, 165);
+    
+}
+#welcome-section{
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.837);
+    height: 510px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#welcome-section h1{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#welcome-section .sub-title{
+    color:var(--color-title);
+    font-style: italic;
+    font-weight: normal;
+}
+#welcome-section .title{
+    font-size: 3rem;
+}
+#projects{
+    background-color: #45567D;
+}
+.project-tile{
+    text-align: center;
+    color: aliceblue;
+    font-size: 40px;
+    padding-top: 5rem;
+}
+hr{
+   width: 600px;
+   margin: auto;
+   margin-bottom: 3rem;
+   height: 2px;
+   background-color: aliceblue;
+}
+.project-items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    
+}
+.project-items img{
+    width: 380px;
+    height: 100%;
+    object-fit: cover;
+}
+.project-items div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--main-gray);
+}
+.project-items div a{
+    padding: 10px 0;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+}
+.project-items div a:hover::after{
+    content: " / >";
+    color: orange;
+    font-size: 16px;
+}
+.project-items div a:hover::before{
+    content: "< ";
+    color: orange;
+    font-size: 16px;
+}
+#projects button{
+    background-color: var(--main-gray);
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    margin-bottom: 5rem;
+}
+#projects button i{
+    color: aliceblue;
+}
+#projects button:hover{
+    background-color: var(--color-title);
+}
+#projects button:hover > i{
+    transform: translateX(2px);
+}
+#projects button a{
+   text-decoration: none;
+   color: aliceblue;
+}
+#contact{
+   color: aliceblue;
+   background-color: var(--main-gray);
+   padding: 5rem 3rem;
+   text-align: center;
+}
+#contact h1{
+    font-size: 3rem;
+}
+#contact p{
+    font-style: italic;
+    font-weight: normal;
+    margin-bottom: 2rem;
+}
+#contact div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+#contact a:hover{
+    transform: translateY(8px);
+}
+#contact a{
+    text-decoration: none;
+    color: aliceblue;
+    margin: 10px 30px;
+    font-size: 20px;
+}
+
+footer{
+    color: aliceblue;
+    background-color: var(--main-gray);
+    border-top: var(--color-title) 3px solid;
+    padding: 3rem;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+footer a{
+    text-decoration: none;
+    color: aliceblue;
+}
+@media (max-width:900px) {
+    .project-items div{
+        width: 90%;
+    }
+    .project-items img{
+        width: 100%;
+    }
+}
+.contact-details:hover {
+  transform: translateY(8px);
+}
